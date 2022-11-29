@@ -31,6 +31,7 @@ def hello_user(message):
                 bot.send_message(message.chat.id, 'Больше')
             elif user_number == number:
                 bot.send_message(message.chat.id, f'Угадал! Я загадал число {number}')
+                is_started = False
         else:
             bot.send_message(message.chat.id, 'Введите число от 1 до 1000')
     else:
